@@ -8,14 +8,7 @@
 		name="viewport"
 		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Login Template</title>
-
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
-		rel="stylesheet" />
-
-	<link href="/assets/css/dark.css" rel="stylesheet" />
 	<link class="js-stylesheet" href="/assets/css/light.css" rel="stylesheet" />
-
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
 	<main class="d-flex w-100 h-100">
@@ -33,14 +26,25 @@
 
 						<div class="card">
 							<div class="card-body">
-								<div class="alert alert-danger alert-dismissible" role="alert">
-									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+								<div class="alert-message alert-dismissable" role="alert">
 									<div class="alert-icon">
-										<i data-feather="alert-circle"></i>
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<circle cx="12" cy="12" r="10"></circle>
+											<line x1="12" y1="8" x2="12" y2="12"></line>
+											<line x1="12" y1="16" x2="12.01" y2="16"></line>
+										</svg>
 									</div>
-									<div class="alert-message">
-										Invalid username or password
+									<div class="alert-content">
+										<div class="alert-title">Invalid credentials</div>
+										<div class="alert-text">Wrong username or password. Please try again.</div>
 									</div>
+									<button type="button" class="alert-close" data-bs-dismiss="alert" aria-label="Close">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<line x1="18" y1="6" x2="6" y2="18"></line>
+											<line x1="6" y1="6" x2="18" y2="18"></line>
+										</svg>
+									</button>
+
 								</div>
 								<div class="m-sm-3">
 									<form>
@@ -67,7 +71,6 @@
 		</div>
 	</main>
 
-	<script src="/assets/js/app.js"></script>
 </body>
 
 </html>
