@@ -25,7 +25,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto d-table h-100">
 					<div class="d-table-cell align-middle">
 						<div class="text-center mt-4">
-							<img class="img-fluid" src="/assets/images/stl_logo.png" width="140">
+							<img class="img-fluid" src="/assets/img/kw_logo.png" width="140">
 							<h1 class="h2">Welcome back!</h1>
 							<p class="lead">
 								Sign in to your account to continue
