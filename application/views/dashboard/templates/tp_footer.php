@@ -47,18 +47,39 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".collapse").forEach(collapse => {
+          const key = "collapseState_" + collapse.id;
+
+          if (localStorage.getItem(key) === "open") {
+            collapse.classList.add("show");
+          }
+          collapse.addEventListener("shown.bs.collapse", () => {
+            localStorage.setItem(key, "open");
+          });
+          collapse.addEventListener("hidden.bs.collapse", () => {
+            localStorage.setItem(key, "closed");
+          });
+        });
         const currentPath = window.location.pathname;
 
-        document.querySelectorAll(".nav-link").forEach(link => {
-          link.classList.remove("active", "bg-gradient-dark", "text-white");
-          link.classList.add("text-dark");
+        document.querySelectorAll(".nav-link[href]").forEach(link => {
           if (link.getAttribute("href") === currentPath) {
             link.classList.add("active", "bg-gradient-dark", "text-white");
             link.classList.remove("text-dark");
+
+            // Open ALL parent collapses
+            let parent = link.closest(".collapse");
+            while (parent) {
+              parent.classList.add("show");
+              localStorage.setItem("collapseState_" + parent.id, "open");
+              parent = parent.parentElement.closest(".collapse");
+            }
           }
         });
+
       });
     </script>
+
 
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

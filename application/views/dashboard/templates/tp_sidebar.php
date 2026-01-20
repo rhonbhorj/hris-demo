@@ -21,71 +21,77 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link bg-gradient-dark text-white" href="/dashboard">
+          <a class="nav-link text-dark" href="/dashboard">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
 
-            <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}" 
-                   aria-controls="pagesExamples" role="button" 
-                   aria-expanded="{% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}true{% else %}false{% endif %}">
-                    <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">contract</i>
-                    <span class="nav-link-text ms-1 ps-1">Employees</span>
-                </a>
-                <div class="collapse {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}show{% endif %}" id="pagesExamples">
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#employeesNav" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}"
+            aria-controls="employeesNav" role="button"
+            aria-expanded="{% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}true{% else %}false{% endif %}">
+            <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">contract</i>
+            <span class="nav-link-text ms-1">Employees</span>
+          </a>
+          <div class="collapse {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}show{% endif %}" id="employeesNav">
             <ul class="nav ">
-                     <li class="nav-item">
-          <a class="nav-link text-dark" href="/security-personnel">
-            <i class="material-symbols-rounded opacity-5">groups</i>
-            <span class="nav-link-text ms-1">Security Personnel</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/attendance">
-            <i class="material-symbols-rounded opacity-5">event_available</i>
-            <span class="nav-link-text ms-1">Attendance</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/payroll">
-            <i class="material-symbols-rounded opacity-5">payments</i>
-            <span class="nav-link-text ms-1">Payroll</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/reports">
-            <i class="material-symbols-rounded opacity-5">bar_chart</i>
-            <span class="nav-link-text ms-1">Incident Reports</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/cases">
-            <i class="material-symbols-rounded opacity-5">work</i>
-            <span class="nav-link-text ms-1">Cases</span>
-          </a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/evaluation">
-            <i class="material-symbols-rounded opacity-5">fact_check</i>
-            <span class="nav-link-text ms-1">Evaluation</span>
-          </a>
-        </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/security-personnel">
+                  <i class="material-symbols-rounded opacity-5">groups</i>
+                  <span class="nav-link-text ms-1">Security Personnel</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/attendance">
+                  <i class="material-symbols-rounded opacity-5">event_available</i>
+                  <span class="nav-link-text ms-1">Attendance</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/payroll">
+                  <i class="material-symbols-rounded opacity-5">payments</i>
+                  <span class="nav-link-text ms-1">Payroll</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/reports">
+                  <i class="material-symbols-rounded opacity-5">bar_chart</i>
+                  <span class="nav-link-text ms-1">Incident Reports</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/cases">
+                  <i class="material-symbols-rounded opacity-5">work</i>
+                  <span class="nav-link-text ms-1">Cases</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/evaluation">
+                  <i class="material-symbols-rounded opacity-5">fact_check</i>
+                  <span class="nav-link-text ms-1">Evaluation</span>
+                </a>
+              </li>
             </ul>
           </div>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-2 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Inspector</h6>
-        </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="./pages/sign-in.html">
-            <i class="material-symbols-rounded opacity-5">qr_code_scanner</i>
-            <span class="nav-link-text ms-1">QR Code</span>
+          <a data-bs-toggle="collapse" href="#inspectorNav" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}"
+            aria-controls="inspectorNav" role="button"
+            aria-expanded="{% if page in ['qr-code-scanner'] %}true{% else %}false{% endif %}">
+            <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">manage_search</i>
+            <span class="nav-link-text ms-1">Inspector</span>
           </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-2 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account</h6>
+          <div class="collapse {% if page in ['qr-code-scanner'] %}show{% endif %}" id="inspectorNav">
+            <ul class="nav ">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/qr-code-scanner">
+                  <i class="material-symbols-rounded opacity-5">qr_code_scanner</i>
+                  <span class="nav-link-text ms-1">QR Code</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="./pages/sign-up.html">
@@ -98,7 +104,7 @@
             <i class="material-symbols-rounded opacity-5">logout</i>
             <span class="nav-link-text ms-1">Logout</span>
           </a>
-        </li>  
+        </li>
       </ul>
     </div>
     <!-- <div class="sidenav-footer position-absolute w-100 bottom-0 ">
