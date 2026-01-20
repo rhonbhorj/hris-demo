@@ -28,13 +28,13 @@
         </li>
 
         <li class="nav-item">
-          <a data-bs-toggle="collapse" href="#employeesNav" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}"
+          <a data-bs-toggle="collapse" href="#employeesNav" class="nav-link text-dark"
             aria-controls="employeesNav" role="button"
-            aria-expanded="{% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}true{% else %}false{% endif %}">
+            aria-expanded="false">
             <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">contract</i>
             <span class="nav-link-text ms-1">Employees</span>
           </a>
-          <div class="collapse {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}show{% endif %}" id="employeesNav">
+          <div class="collapse" id="employeesNav">
             <ul class="nav ">
               <li class="nav-item">
                 <a class="nav-link text-dark" href="/security-personnel">
@@ -76,10 +76,10 @@
           </div>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" href="#inspectorNav" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}"
+          <a data-bs-toggle="collapse" href="#inspectorNav" class="nav-link text-dark"
             aria-controls="inspectorNav" role="button"
-            aria-expanded="{% if page in ['qr-code-scanner'] %}true{% else %}false{% endif %}">
-            <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">manage_search</i>
+            aria-expanded="false">
+            <i class="material-symbols-rounded opacity-5">manage_search</i>
             <span class="nav-link-text ms-1">Inspector</span>
           </a>
           <div class="collapse {% if page in ['qr-code-scanner'] %}show{% endif %}" id="inspectorNav">
