@@ -15,7 +15,6 @@
 
 	<link href="/assets/css/dark.css" rel="stylesheet" />
 	<link class="js-stylesheet" href="/assets/css/light.css" rel="stylesheet" />
-	<script src="/assets/js/loginsettings.js"></script>
 
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
@@ -25,7 +24,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto d-table h-100">
 					<div class="d-table-cell align-middle">
 						<div class="text-center mt-4">
-							<img class="img-fluid" src="/assets/img/kw_logo.png" width="140">
+							<img class="img-fluid" src="/assets/img/kw_logo_wh.png" width="140">
 							<h1 class="h2">Welcome back!</h1>
 							<p class="lead">
 								Sign in to your account to continue
