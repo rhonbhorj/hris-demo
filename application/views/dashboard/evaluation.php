@@ -8,803 +8,605 @@
     </div>
   </div>
 
-  <!-- Evaluation Summary Cards -->
-  <div class="row mb-4">
-    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-      <div class="card">
-        <div class="card-header p-2 ps-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-sm mb-0 text-capitalize">Due for Evaluation</p>
-              <h4 class="mb-0">12</h4>
-            </div>
-            <div class="icon icon-md icon-shape bg-gradient-warning shadow-warning shadow text-center border-radius-lg">
-              <i class="material-symbols-rounded opacity-10">pending_actions</i>
-            </div>
-          </div>
-        </div>
-        <hr class="dark horizontal my-0">
-        <div class="card-footer p-2 ps-3">
-          <p class="mb-0 text-sm">Monthly performance review</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-      <div class="card">
-        <div class="card-header p-2 ps-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-sm mb-0 text-capitalize">Average Rating</p>
-              <h4 class="mb-0">4.2</h4>
-            </div>
-            <div class="icon icon-md icon-shape bg-gradient-info shadow-info shadow text-center border-radius-lg">
-              <i class="material-symbols-rounded opacity-10">star</i>
-            </div>
-          </div>
-        </div>
-        <hr class="dark horizontal my-0">
-        <div class="card-footer p-2 ps-3">
-          <p class="mb-0 text-sm"><span class="text-success font-weight-bolder">+0.3 </span>from last quarter</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-      <div class="card">
-        <div class="card-header p-2 ps-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-sm mb-0 text-capitalize">Outstanding</p>
-              <h4 class="mb-0">8</h4>
-            </div>
-            <div class="icon icon-md icon-shape bg-gradient-success shadow-success shadow text-center border-radius-lg">
-              <i class="material-symbols-rounded opacity-10">military_tech</i>
-            </div>
-          </div>
-        </div>
-        <hr class="dark horizontal my-0">
-        <div class="card-footer p-2 ps-3">
-          <p class="mb-0 text-sm">>4.5 rating this month</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-sm-6">
-      <div class="card">
-        <div class="card-header p-2 ps-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-sm mb-0 text-capitalize">Needs Improvement</p>
-              <h4 class="mb-0">3</h4>
-            </div>
-            <div class="icon icon-md icon-shape bg-gradient-danger shadow-danger shadow text-center border-radius-lg">
-              <i class="material-symbols-rounded opacity-10">warning</i>
-            </div>
-          </div>
-        </div>
-        <hr class="dark horizontal my-0">
-        <div class="card-footer p-2 ps-3">
-          <p class="mb-0 text-sm"><3.0 rating requires action</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Evaluation Actions -->
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
-              <button class="btn btn-outline-primary btn-lg w-100">
-                <i class="material-symbols-rounded me-2">add_circle</i>
-                New Evaluation
-              </button>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <button class="btn btn-outline-info btn-lg w-100">
-                <i class="material-symbols-rounded me-2">assessment</i>
-                Generate Reports
-              </button>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <button class="btn btn-outline-success btn-lg w-100">
-                <i class="material-symbols-rounded me-2">download</i>
-                Export Results
-              </button>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <button class="btn btn-outline-dark btn-lg w-100">
-                <i class="material-symbols-rounded me-2">calendar_month</i>
-                Schedule All
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Evaluation Table -->
+  <!-- NEW PROBATIONARY EVALUATION TABLE -->
   <div class="row mb-4">
     <div class="col-12">
       <div class="card">
         <div class="card-header pb-0">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-6 col-7">
-              <h6>Performance Evaluations - Q4 2023</h6>
-              <p class="text-sm mb-0">
-                <i class="fa fa-chart-line text-info" aria-hidden="true"></i>
-                <span class="font-weight-bold ms-1">Last 30 days</span> evaluations
-              </p>
+              <h6>EVALUATION FOR PROBATIONARY</h6>
+          
             </div>
             <div class="col-lg-6 col-5 my-auto text-end">
-              <div class="dropdown float-lg-end pe-4">
-                <button class="btn btn-sm btn-success mb-0">
-                  <i class="fa fa-check-circle me-1"></i> Submit All
+              <!-- Status Tabs -->
+              <div class="d-flex justify-content-end align-items-center flex-wrap">
+                <div class="status-tabs me-3">
+                  <button class="status-tab btn btn-sm mb-1 active" data-status="all">
+                    All Departments
+                    <span class="tab-badge">12</span>
+                  </button>
+                  <button class="status-tab btn btn-sm mb-1" data-status="pending">
+                    PENDING
+                    <span class="tab-badge">5</span>
+                  </button>
+                  <button class="status-tab btn btn-sm mb-1" data-status="management">
+                    FOR APPROVAL
+                    <span class="tab-badge">4</span>
+                  </button>
+                  <button class="status-tab btn btn-sm mb-1" data-status="accomplished">
+                    ACCOMPLISHED
+                    <span class="tab-badge">3</span>
+                  </button>
+                </div>
+                <button class="btn btn-sm btn-success mb-0" id="btnExportReport">
+                  <i class="fas fa-file-export me-1"></i> Export Report
                 </button>
-                <a class="cursor-pointer ms-2" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-ellipsis-v text-secondary"></i>
-                </a>
-                <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
-                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Bulk Update</a></li>
-                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Set Reminders</a></li>
-                  <li><a class="dropdown-item border-radius-md" href="javascript:;">View History</a></li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="card-body px-0 pb-2">
+          <!-- Table Filters -->
+          <div class="row mx-3 mb-3">
+            <div class="col-md-8">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="form-control" id="tableSearch" placeholder="Search employees, objectives...">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="periodFilter">
+                <option value="">All Periods</option>
+                <option value="Q1 2024">Q1 2024</option>
+                <option value="Q2 2024">Q2 2024</option>
+                <option value="Q3 2024">Q3 2024</option>
+                <option value="Q4 2024">Q4 2024</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Evaluation Table -->
           <div class="table-responsive">
-            <table class="table align-items-center mb-0">
+            <table class="table align-items-center mb-0" id="probationaryTable">
               <thead>
-                <tr>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Security Guard</th>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Last Evaluation</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Professionalism</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alertness</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Attendance</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Overall Rating</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                <tr class="bg-gray-100">
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" rowspan="2">
+                    <strong>NAME OF EMPLOYEE</strong>
+                  </th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2" rowspan="2">
+                    <strong>DATE HIRED</strong>
+                  </th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2" rowspan="2">
+                    <strong>TENURESHIP</strong>
+                  </th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" colspan="2">
+                    <strong>PERIOD OF EVALUATION</strong>
+                  </th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2" rowspan="2">
+                    <strong>OBJECTIVE</strong>
+                  </th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" rowspan="2">
+                    <strong>STATUS</strong>
+                  </th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" rowspan="2">
+                    <strong>ACTION</strong>
+                  </th>
+                </tr>
+                <tr class="bg-gray-100">
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    <strong>FROM</strong>
+                  </th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    <strong>TO</strong>
+                  </th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="guard1">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Juan Dela Cruz</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2020-001 | SM Mall of Asia</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 15, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Supervisor A. Santos</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">5.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-success">4.5</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Outstanding</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Completed</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-warning mb-0 ms-1">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="guard2">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Maria Santos</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2019-045 | BGC Corporate Center</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 14, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Supervisor R. Cruz</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">5.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">3.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-info">4.2</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Very Good</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Completed</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-warning mb-0 ms-1">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="guard3">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Roberto Garcia</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2021-087 | Makati Medical Center</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 10, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Supervisor L. Fernandez</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">3.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">2.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">2.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-danger">2.5</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Needs Improvement</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-warning">In Progress</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-danger mb-0 ms-1">
-                      <i class="fa fa-comment"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="guard4">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Lorna Fernandez</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2018-123 | Ayala Avenue Banks</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 12, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Manager E. Tan</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">5.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">5.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-success">4.8</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Outstanding</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Completed</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-success mb-0 ms-1">
-                      <i class="fa fa-award"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="guard5">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Antonio Reyes</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2022-156 | NAIA Terminal 3</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 08, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Supervisor M. Johnson</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">3.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">4.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-info">3.8</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Good</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Completed</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-warning mb-0 ms-1">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="guard6">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Cristina Lim</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2020-189 | UP Diliman Campus</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Due: Nov 20, 2023</p>
-                    <p class="text-xs text-secondary mb-0">Pending evaluation</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <span class="text-xs text-secondary">-</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <span class="text-xs text-secondary">-</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <span class="text-xs text-secondary">-</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-secondary">-</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Not Rated</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-warning">Pending</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-primary mb-0">
-                      <i class="fa fa-play-circle"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-dark mb-0 ms-1">
-                      <i class="fa fa-calendar"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="/assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="guard7">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Eduardo Tan</h6>
-                        <p class="text-xs text-secondary mb-0">SG-2017-234 | Port of Manila</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="text-sm font-weight-bold mb-0">Nov 05, 2023</p>
-                    <p class="text-xs text-secondary mb-0">By: Supervisor A. Santos</p>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">3.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half-alt text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">2.5</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="rating-stars">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <i class="fa fa-star text-secondary"></i>
-                      <span class="text-xs font-weight-bold ms-1">2.0</span>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="badge badge-lg bg-gradient-danger">2.5</span>
-                      <p class="text-xs text-secondary mb-0 mt-1">Needs Improvement</p>
-                    </div>
-                  </td>
-                  <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-danger">Action Required</span>
-                  </td>
-                  <td class="align-middle text-center">
-                    <button class="btn btn-xs btn-outline-info mb-0">
-                      <i class="fa fa-eye"></i>
-                    </button>
-                    <button class="btn btn-xs btn-outline-danger mb-0 ms-1">
-                      <i class="fa fa-exclamation-triangle"></i>
-                    </button>
-                  </td>
-                </tr>
+              <tbody id="evaluationTableBody">
+                <!-- Data will be populated by JavaScript -->
               </tbody>
             </table>
           </div>
+
+          <!-- Pagination -->
+          <div class="row mx-3 mt-3">
+            <div class="col-md-6">
+              <div class="pagination-info text-sm text-secondary">
+                SHOWING <span id="startRow">0</span> TO <span id="endRow">0</span> OF <span
+                  id="totalRows">0</span> ENTRIES
+              </div>
+            </div>
+            <div class="col-md-6 text-end">
+              <div class="pagination-controls">
+                <button class="btn btn-sm btn-outline-secondary" id="prevPage">
+                  <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="btn btn-sm btn-outline-secondary ms-2" id="nextPage">
+                  Next <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Performance Analysis Section -->
-  <div class="row">
-    <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-      <div class="card">
-        <div class="card-header pb-0">
-          <h6>Performance Trends</h6>
-          <p class="text-sm mb-0">
-            <i class="fa fa-chart-line text-info" aria-hidden="true"></i>
-            <span class="font-weight-bold ms-1">Quarterly rating progression</span>
-          </p>
-        </div>
-        <div class="card-body p-3">
-          <div class="chart">
-            <canvas id="performance-chart" class="chart-canvas" height="300"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card h-100">
-        <div class="card-header pb-0">
-          <h6>Evaluation Categories</h6>
-          <p class="text-sm">
-            <i class="fa fa-list-alt text-success" aria-hidden="true"></i>
-            <span class="font-weight-bold">Assessment criteria</span>
-          </p>
-        </div>
-        <div class="card-body p-3">
-          <div class="timeline timeline-one-side">
-            <div class="timeline-block mb-3">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-primary text-gradient">security</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Professionalism</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Uniform, conduct, customer service</p>
-              </div>
-            </div>
-            <div class="timeline-block mb-3">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-warning text-gradient">visibility</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Alertness</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Situational awareness, response time</p>
-              </div>
-            </div>
-            <div class="timeline-block mb-3">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-success text-gradient">schedule</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Attendance</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Punctuality, reliability, leaves</p>
-              </div>
-            </div>
-            <div class="timeline-block mb-3">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-info text-gradient">book</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Knowledge</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Procedures, emergency protocols</p>
-              </div>
-            </div>
-            <div class="timeline-block mb-3">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-danger text-gradient">report</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Reporting</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Incident reports, documentation</p>
-              </div>
-            </div>
-            <div class="timeline-block">
-              <span class="timeline-step">
-                <i class="material-symbols-rounded text-dark text-gradient">teamwork</i>
-              </span>
-              <div class="timeline-content">
-                <h6 class="text-dark text-sm font-weight-bold mb-0">Teamwork</h6>
-                <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Cooperation, communication</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  
 
 <script src="/assets/js/plugins/chartjs.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  // Performance Trends Chart
-  var ctx = document.getElementById("performance-chart").getContext("2d");
-  new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: ["Q1", "Q2", "Q3", "Q4"],
-      datasets: [{
-        label: "Overall Average",
-        tension: 0.3,
-        borderWidth: 3,
-        pointRadius: 5,
-        pointBackgroundColor: "#17c1e8",
-        pointBorderColor: "#ffffff",
-        borderColor: "#17c1e8",
-        backgroundColor: "transparent",
-        data: [3.8, 4.0, 4.1, 4.2],
-        fill: false
-      }, {
-        label: "Professionalism",
-        tension: 0.3,
-        borderWidth: 2,
-        pointRadius: 4,
-        pointBackgroundColor: "#e91e63",
-        pointBorderColor: "#ffffff",
-        borderColor: "#e91e63",
-        backgroundColor: "transparent",
-        data: [4.0, 4.1, 4.2, 4.3],
-        fill: false
-      }, {
-        label: "Alertness",
-        tension: 0.3,
-        borderWidth: 2,
-        pointRadius: 4,
-        pointBackgroundColor: "#fd7e14",
-        pointBorderColor: "#ffffff",
-        borderColor: "#fd7e14",
-        backgroundColor: "transparent",
-        data: [3.9, 4.0, 4.0, 4.2],
-        fill: false
-      }],
+  // Sample evaluation data for probationary employees
+  let evaluations = [
+    {
+      id: 1,
+      name: "John Smith",
+      dateHired: "2023-01-15",
+      tenureship: "6 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Initial Probation Review",
+      status: "pending",
+      department: "IT",
+      period: "Q2 2023"
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          display: true,
-          position: 'top',
-        }
+    {
+      id: 2,
+      name: "Sarah Johnson",
+      dateHired: "2023-03-10",
+      tenureship: "4 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Mid-probation Assessment",
+      status: "management",
+      department: "HR",
+      period: "Q2 2023"
+    },
+    {
+      id: 3,
+      name: "Michael Chen",
+      dateHired: "2023-02-22",
+      tenureship: "5 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Final Probation Review",
+      status: "accomplished",
+      department: "Sales",
+      period: "Q2 2023"
+    },
+    {
+      id: 4,
+      name: "Emma Wilson",
+      dateHired: "2023-04-28",
+      tenureship: "3 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Initial Assessment",
+      status: "pending",
+      department: "Marketing",
+      period: "Q2 2023"
+    },
+    {
+      id: 5,
+      name: "Robert Brown",
+      dateHired: "2023-01-14",
+      tenureship: "6 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Probation Completion",
+      status: "management",
+      department: "Finance",
+      period: "Q2 2023"
+    },
+    {
+      id: 6,
+      name: "Lisa Anderson",
+      dateHired: "2023-03-30",
+      tenureship: "4 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Performance Review",
+      status: "accomplished",
+      department: "IT",
+      period: "Q3 2023"
+    },
+    {
+      id: 7,
+      name: "David Miller",
+      dateHired: "2023-02-05",
+      tenureship: "5 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Skills Assessment",
+      status: "pending",
+      department: "Operations",
+      period: "Q3 2023"
+    },
+    {
+      id: 8,
+      name: "Jennifer Lee",
+      dateHired: "2023-04-18",
+      tenureship: "3 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Initial Evaluation",
+      status: "management",
+      department: "Customer Service",
+      period: "Q3 2023"
+    },
+    {
+      id: 9,
+      name: "Thomas Garcia",
+      dateHired: "2023-01-01",
+      tenureship: "6 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Final Assessment",
+      status: "accomplished",
+      department: "IT",
+      period: "Q3 2023"
+    },
+    {
+      id: 10,
+      name: "Amanda Taylor",
+      dateHired: "2023-03-15",
+      tenureship: "4 months",
+      periodFrom: "2023-06-01",
+      periodTo: "2023-06-30",
+      objective: "Mid-term Review",
+      status: "pending",
+      department: "HR",
+      period: "Q4 2023"
+    }
+  ];
+
+  // Pagination variables
+  let currentPage = 1;
+  const rowsPerPage = 5;
+  let currentFilteredEvaluations = [...evaluations];
+  let currentStatusFilter = 'all';
+
+  $(document).ready(function () {
+    // Initialize table
+    updateTabCounts();
+    renderTable();
+
+    // Status Tab switching
+    $(".status-tab").click(function () {
+      $(".status-tab").removeClass("active");
+      $(this).addClass("active");
+
+      currentStatusFilter = $(this).data("status");
+      currentPage = 1;
+      filterEvaluations();
+    });
+
+    // Search functionality
+    $("#tableSearch").on("input", function () {
+      filterEvaluations();
+    });
+
+    // Period filter
+    $("#periodFilter").change(function () {
+      filterEvaluations();
+    });
+
+    // Pagination
+    $("#prevPage").click(function () {
+      if (currentPage > 1) {
+        currentPage--;
+        renderTable();
+      }
+    });
+
+    $("#nextPage").click(function () {
+      const totalPages = Math.ceil(currentFilteredEvaluations.length / rowsPerPage);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderTable();
+      }
+    });
+
+    // Export buttons
+    $("#btnExportReport").click(function () {
+      exportToCSV();
+    });
+
+    $("#btnExportResults").click(function () {
+      exportToCSV();
+    });
+
+    // Other action buttons
+    $("#btnNewEvaluation").click(function () {
+      alert("New Evaluation functionality would open a form here.");
+    });
+
+    $("#btnGenerateReports").click(function () {
+      alert("Generate Reports functionality would be implemented here.");
+    });
+
+    $("#btnScheduleAll").click(function () {
+      alert("Schedule All functionality would be implemented here.");
+    });
+
+    // Initialize chart
+    initializePerformanceChart();
+  });
+
+  function renderTable() {
+    const startIndex = (currentPage - 1) * rowsPerPage;
+    const endIndex = startIndex + rowsPerPage;
+    const pageEvaluations = currentFilteredEvaluations.slice(startIndex, endIndex);
+
+    $("#evaluationTableBody").empty();
+
+    if (pageEvaluations.length === 0) {
+      const row = `
+        <tr>
+          <td colspan="8" class="text-center py-4">
+            <div class="text-muted">NO DATA AVAILABLE IN TABLE</div>
+          </td>
+        </tr>
+      `;
+      $("#evaluationTableBody").append(row);
+    } else {
+      pageEvaluations.forEach((evalItem) => {
+        const statusText = getStatusText(evalItem.status);
+        const statusClass = getStatusClass(evalItem.status);
+
+        const row = `
+          <tr>
+            <td>
+              <div class="d-flex px-2 py-1">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="mb-0 text-sm">${evalItem.name}</h6>
+                  <p class="text-xs text-secondary mb-0">ID: EMP${String(evalItem.id).padStart(3, "0")}</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="text-sm font-weight-bold mb-0">${formatDate(evalItem.dateHired)}</p>
+            </td>
+            <td>
+              <p class="text-sm font-weight-bold mb-0">${evalItem.tenureship}</p>
+            </td>
+            <td class="text-center">
+              <p class="text-sm mb-0">${formatDate(evalItem.periodFrom)}</p>
+            </td>
+            <td class="text-center">
+              <p class="text-sm mb-0">${formatDate(evalItem.periodTo)}</p>
+            </td>
+            <td>
+              <p class="text-sm mb-0">${evalItem.objective}</p>
+            </td>
+            <td class="text-center">
+              <span class="badge ${statusClass}">${statusText}</span>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-xs btn-outline-info mb-0" onclick="viewEvaluation(${evalItem.id})" title="View">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="btn btn-xs btn-outline-warning mb-0 ms-1" onclick="editEvaluation(${evalItem.id})" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="btn btn-xs btn-outline-success mb-0 ms-1" onclick="submitEvaluation(${evalItem.id})" title="Submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </td>
+          </tr>
+        `;
+        $("#evaluationTableBody").append(row);
+      });
+    }
+
+    // Update pagination info
+    $("#startRow").text(pageEvaluations.length > 0 ? startIndex + 1 : 0);
+    $("#endRow").text(Math.min(endIndex, currentFilteredEvaluations.length));
+    $("#totalRows").text(currentFilteredEvaluations.length);
+
+    // Update pagination buttons
+    $("#prevPage").prop("disabled", currentPage === 1);
+    $("#nextPage").prop("disabled", currentPage === Math.ceil(currentFilteredEvaluations.length / rowsPerPage));
+  }
+
+  function filterEvaluations() {
+    const searchTerm = $("#tableSearch").val().toLowerCase();
+    const periodFilter = $("#periodFilter").val();
+
+    currentFilteredEvaluations = evaluations.filter((evalItem) => {
+      // Status filter
+      const matchesStatus = currentStatusFilter === 'all' || evalItem.status === currentStatusFilter;
+
+      // Search filter
+      const matchesSearch = searchTerm === '' ||
+        evalItem.name.toLowerCase().includes(searchTerm) ||
+        evalItem.objective.toLowerCase().includes(searchTerm) ||
+        evalItem.department.toLowerCase().includes(searchTerm);
+
+      // Period filter
+      let matchesPeriod = true;
+      if (periodFilter) {
+        matchesPeriod = evalItem.period === periodFilter;
+      }
+
+      return matchesStatus && matchesSearch && matchesPeriod;
+    });
+
+    currentPage = 1;
+    updateTabCounts();
+    renderTable();
+  }
+
+  function updateTabCounts() {
+    const allCount = evaluations.length;
+    const pendingCount = evaluations.filter(e => e.status === 'pending').length;
+    const managementCount = evaluations.filter(e => e.status === 'management').length;
+    const accomplishedCount = evaluations.filter(e => e.status === 'accomplished').length;
+
+    $('.status-tab[data-status="all"] .tab-badge').text(allCount);
+    $('.status-tab[data-status="pending"] .tab-badge').text(pendingCount);
+    $('.status-tab[data-status="management"] .tab-badge').text(managementCount);
+    $('.status-tab[data-status="accomplished"] .tab-badge').text(accomplishedCount);
+  }
+
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  }
+
+  function getStatusText(status) {
+    switch (status) {
+      case 'pending': return 'PENDING';
+      case 'management': return 'FOR APPROVAL';
+      case 'accomplished': return 'ACCOMPLISHED';
+      default: return status.toUpperCase();
+    }
+  }
+
+  function getStatusClass(status) {
+    switch (status) {
+      case 'pending': return 'bg-gradient-warning';
+      case 'management': return 'bg-gradient-info';
+      case 'accomplished': return 'bg-gradient-success';
+      default: return 'bg-gradient-secondary';
+    }
+  }
+
+  // Action functions
+  function viewEvaluation(id) {
+    const evalItem = evaluations.find(e => e.id === id);
+    if (evalItem) {
+      alert(`Evaluation Details:\n\nEmployee: ${evalItem.name}\nDate Hired: ${formatDate(evalItem.dateHired)}\nTenureship: ${evalItem.tenureship}\nEvaluation Period: ${formatDate(evalItem.periodFrom)} to ${formatDate(evalItem.periodTo)}\nObjective: ${evalItem.objective}\nStatus: ${getStatusText(evalItem.status)}\nDepartment: ${evalItem.department}`);
+    }
+  }
+
+  function editEvaluation(id) {
+    const evalItem = evaluations.find(e => e.id === id);
+    if (evalItem) {
+      alert(`Edit evaluation for ${evalItem.name}\n\nThis would open an edit form in a real application.`);
+    }
+  }
+
+  function submitEvaluation(id) {
+    const evalItem = evaluations.find(e => e.id === id);
+    if (evalItem) {
+      if (confirm(`Submit evaluation for ${evalItem.name} for management approval?`)) {
+        // Update status to management
+        evalItem.status = 'management';
+        updateTabCounts();
+        filterEvaluations();
+        alert('Evaluation submitted for management approval!');
+      }
+    }
+  }
+
+  function exportToCSV() {
+    alert("Export functionality would be implemented here.\nData would be exported to CSV format.");
+    // In a real application, this would generate and download a CSV file
+  }
+
+  function initializePerformanceChart() {
+    var ctx = document.getElementById("performance-chart").getContext("2d");
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["Q1", "Q2", "Q3", "Q4"],
+        datasets: [{
+          label: "Overall Average",
+          tension: 0.3,
+          borderWidth: 3,
+          pointRadius: 5,
+          pointBackgroundColor: "#17c1e8",
+          pointBorderColor: "#ffffff",
+          borderColor: "#17c1e8",
+          backgroundColor: "transparent",
+          data: [3.8, 4.0, 4.1, 4.2],
+          fill: false
+        }, {
+          label: "Professionalism",
+          tension: 0.3,
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: "#e91e63",
+          pointBorderColor: "#ffffff",
+          borderColor: "#e91e63",
+          backgroundColor: "transparent",
+          data: [4.0, 4.1, 4.2, 4.3],
+          fill: false
+        }, {
+          label: "Alertness",
+          tension: 0.3,
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: "#fd7e14",
+          pointBorderColor: "#ffffff",
+          borderColor: "#fd7e14",
+          backgroundColor: "transparent",
+          data: [3.9, 4.0, 4.0, 4.2],
+          fill: false
+        }],
       },
-      scales: {
-        y: {
-          min: 3.0,
-          max: 5.0,
-          grid: {
-            drawBorder: false,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
             display: true,
-            drawOnChartArea: true,
-            drawTicks: false,
-            borderDash: [5, 5],
-            color: '#e5e5e5'
-          },
-          ticks: {
-            color: "#737373",
-            padding: 10,
-            font: {
-              size: 12,
-              lineHeight: 2
+            position: 'top',
+          }
+        },
+        scales: {
+          y: {
+            min: 3.0,
+            max: 5.0,
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5],
+              color: '#e5e5e5'
             },
-            callback: function(value) {
-              return value.toFixed(1);
+            ticks: {
+              color: "#737373",
+              padding: 10,
+              font: {
+                size: 12,
+                lineHeight: 2
+              },
+              callback: function (value) {
+                return value.toFixed(1);
+              }
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5],
+              color: '#e5e5e5'
+            },
+            ticks: {
+              color: '#737373',
+              padding: 10,
+              font: {
+                size: 12,
+                lineHeight: 2
+              },
             }
           },
         },
-        x: {
-          grid: {
-            drawBorder: false,
-            display: true,
-            drawOnChartArea: true,
-            drawTicks: false,
-            borderDash: [5, 5],
-            color: '#e5e5e5'
-          },
-          ticks: {
-            color: '#737373',
-            padding: 10,
-            font: {
-              size: 12,
-              lineHeight: 2
-            },
-          }
-        },
       },
-    },
-  });
-
-  // Add CSS for rating stars
-  const style = document.createElement('style');
-  style.textContent = `
-    .rating-stars {
-      display: inline-flex;
-      align-items: center;
-    }
-    .rating-stars .fa-star,
-    .rating-stars .fa-star-half-alt {
-      font-size: 0.8rem;
-      margin: 0 1px;
-    }
-  `;
-  document.head.appendChild(style);
+    });
+  }
 </script>
+

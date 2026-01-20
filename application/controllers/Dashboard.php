@@ -52,5 +52,14 @@ class Dashboard extends CI_Controller
         $this->load->view('dashboard/evaluation.php');
         $this->load->view('dashboard/templates/tp_footer.php');
     }
+     public function cases_page()
+    {
+        $this->load->view('dashboard/templates/tp_header.php');
+        $this->load->view('dashboard/templates/tp_sidebar.php');
+        $this->load->view('dashboard/templates/tp_navbar.php');
+        $this->load->view('dashboard/cases.php');
+        $this->load->view('dashboard/templates/tp_footer.php');
+    }
+
 
 }

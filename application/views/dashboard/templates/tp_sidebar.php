@@ -26,10 +26,17 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-2 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">EMPLOYEES</h6>
-        </li>
-        <li class="nav-item">
+
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-dark {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}active{% endif %}" 
+                   aria-controls="pagesExamples" role="button" 
+                   aria-expanded="{% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}true{% else %}false{% endif %}">
+                    <i class="material-symbols-rounded opacity-5 {% if page.brand == 'RTL' %}ms-2{% else %}me-2{% endif %}">contract</i>
+                    <span class="nav-link-text ms-1 ps-1">Employees</span>
+                </a>
+                <div class="collapse {% if page in ['security-personnel', 'attendance', 'payroll', 'reports', 'evaluation'] %}show{% endif %}" id="pagesExamples">
+            <ul class="nav ">
+                     <li class="nav-item">
           <a class="nav-link text-dark" href="/security-personnel">
             <i class="material-symbols-rounded opacity-5">groups</i>
             <span class="nav-link-text ms-1">Security Personnel</span>
@@ -53,17 +60,20 @@
             <span class="nav-link-text ms-1">Incident Reports</span>
           </a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link text-dark" href="#">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/cases">
             <i class="material-symbols-rounded opacity-5">work</i>
             <span class="nav-link-text ms-1">Cases</span>
           </a>
-        </li> -->
+        </li> 
         <li class="nav-item">
           <a class="nav-link text-dark" href="/evaluation">
             <i class="material-symbols-rounded opacity-5">fact_check</i>
             <span class="nav-link-text ms-1">Evaluation</span>
           </a>
+        </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item mt-3">
           <h6 class="ps-2 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Inspector</h6>
@@ -88,7 +98,7 @@
             <i class="material-symbols-rounded opacity-5">logout</i>
             <span class="nav-link-text ms-1">Logout</span>
           </a>
-        </li>
+        </li>  
       </ul>
     </div>
     <!-- <div class="sidenav-footer position-absolute w-100 bottom-0 ">

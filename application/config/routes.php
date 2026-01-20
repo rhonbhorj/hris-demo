@@ -59,6 +59,7 @@ $route['security-personnel'] = 'dashboard/security_personnel_page';
 $route['attendance'] = 'dashboard/attendance_page';
 $route['payroll'] = 'dashboard/payroll_page';
 $route['reports'] = 'dashboard/reports_page';
+$route['cases'] = 'dashboard/cases_page';
 $route['evaluation'] = 'dashboard/evaluation_page';
 
 $route['blank-page'] = 'dashboard/blank_page';
