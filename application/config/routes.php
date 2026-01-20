@@ -61,6 +61,8 @@ $route['payroll'] = 'dashboard/payroll_page';
 $route['reports'] = 'dashboard/reports_page';
 $route['cases'] = 'dashboard/cases_page';
 $route['evaluation'] = 'dashboard/evaluation_page';
+$route['settings'] = 'dashboard/settings_page';
+$route['qr-code-scanner'] = 'dashboard/qr_code_scanner_page';
 
 $route['blank-page'] = 'dashboard/blank_page';
 $route['404_override'] = 'main/page_404';

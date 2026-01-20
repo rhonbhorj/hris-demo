@@ -82,7 +82,7 @@
             <i class="material-symbols-rounded opacity-5">manage_search</i>
             <span class="nav-link-text ms-1">Inspector</span>
           </a>
-          <div class="collapse {% if page in ['qr-code-scanner'] %}show{% endif %}" id="inspectorNav">
+          <div class="collapse" id="inspectorNav">
             <ul class="nav ">
               <li class="nav-item">
                 <a class="nav-link text-dark" href="/qr-code-scanner">
@@ -94,13 +94,13 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="./pages/sign-up.html">
+          <a class="nav-link text-dark" href="/settings">
             <i class="material-symbols-rounded opacity-5">settings</i>
             <span class="nav-link-text ms-1">Settings</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="./pages/sign-up.html">
+          <a class="nav-link text-dark" href="#">
             <i class="material-symbols-rounded opacity-5">logout</i>
             <span class="nav-link-text ms-1">Logout</span>
           </a>

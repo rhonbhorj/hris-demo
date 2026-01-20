@@ -60,6 +60,22 @@ class Dashboard extends CI_Controller
         $this->load->view('dashboard/cases.php');
         $this->load->view('dashboard/templates/tp_footer.php');
     }
+     public function settings_page()
+    {
+        $this->load->view('dashboard/templates/tp_header.php');
+        $this->load->view('dashboard/templates/tp_sidebar.php');
+        $this->load->view('dashboard/templates/tp_navbar.php');
+        $this->load->view('dashboard/settings.php');
+        $this->load->view('dashboard/templates/tp_footer.php');
+    }
+     public function qr_code_scanner_page()
+    {
+        $this->load->view('dashboard/templates/tp_header.php');
+        $this->load->view('dashboard/templates/tp_sidebar.php');
+        $this->load->view('dashboard/templates/tp_navbar.php');
+        $this->load->view('dashboard/qr_code_scanner.php');
+        $this->load->view('dashboard/templates/tp_footer.php');
+    }
 
 
 }
